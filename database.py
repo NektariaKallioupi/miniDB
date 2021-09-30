@@ -329,6 +329,7 @@ class Database:
                 return table
             else:
                 table.show()
+                return table
 
     def show_table(self, table_name, no_of_rows=None):
         '''
