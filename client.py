@@ -14,6 +14,7 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(ADDR)  # bound this socket to this address
 
 
+# function that sends a command to our sever and receives respond
 def send(msg):
     message = msg.encode(FORMAT)
     client.send(message)
